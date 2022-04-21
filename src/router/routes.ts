@@ -1,5 +1,5 @@
-import { RouteRecord } from "vue-router"
+import { RouteRecord } from "vue-router";
 
-const routes:Array<RouteRecord> = []
+const routes: Array<RouteRecord> = [];
 
-export default routes
+export default routes;
