@@ -7,7 +7,9 @@
 		"build": "vue-tsc --noEmit && vite build",
 		"preview": "vite preview",
 		"test": "jest",
-		"lint": "eslint --ext .js,.ts,.tsx src/"
+		"lint": "eslint --ext .js,.ts,.tsx src/",
+		"prepare": "husky install",
+		"changelog": "conventional-changelog -p angular -i Changelog.md -s"
 	},
 	"husky": {
 		"hooks": {
@@ -45,6 +47,7 @@
 		"@typescript-eslint/parser": "^5.20.0",
 		"@vitejs/plugin-vue": "^2.3.1",
 		"babel-jest": "^27.5.1",
+		"conventional-changelog-cli": "^2.2.2",
 		"eslint": "^8.13.0",
 		"husky": "^7.0.4",
 		"jest": "^27.5.1",
