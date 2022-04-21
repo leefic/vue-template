@@ -3,11 +3,12 @@
 	"private": true,
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "vite --open",
-		"build": "vue-tsc --noEmit && vite build",
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build --mode production",
 		"preview": "vite preview",
 		"test": "jest",
 		"lint": "eslint --ext .js,.ts,.tsx src/ --fix",
+		"prettier":"prettier --write",
 		"prepare": "husky install",
 		"changelog": "conventional-changelog -p angular -i Changelog.md -s"
 	},
