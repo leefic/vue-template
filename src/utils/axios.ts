@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const instance = axios.create({
 	timeout: 5 * 1000,
@@ -11,7 +11,7 @@ instance.interceptors.request.use(
 	},
 	(error: any) => {
 		return Promise.reject(error);
-	}
+	},
 );
 
 instance.interceptors.response.use(
@@ -20,7 +20,7 @@ instance.interceptors.response.use(
 	},
 	(error: any) => {
 		return Promise.reject(error);
-	}
+	},
 );
 
 export default instance;

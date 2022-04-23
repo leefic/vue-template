@@ -1,9 +1,9 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia';
 
-export default defineStore("user", {
+export default defineStore('user', {
 	state: () => {
 		return {
-			token: "",
+			token: '',
 			age: 18,
 		};
 	},

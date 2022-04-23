@@ -1,16 +1,16 @@
 module.exports = {
-	parser: "vue-eslint-parser",
+	parser: 'vue-eslint-parser',
 	extends: [
-		"eslint:recommended",
-		"plugin:vue/vue3-recommended",
-		"plugin:prettier/recommended",
+		'eslint:recommended',
+		'plugin:vue/vue3-recommended',
+		'plugin:prettier/recommended',
 	],
 
-	plugins: ["vue", "@typescript-eslint", "prettier"],
+	plugins: ['vue', '@typescript-eslint', 'prettier'],
 	parserOptions: {
 		ecmaVersion: 12,
-		parser: "@typescript-eslint/parser",
-		sourceType: "module",
+		parser: '@typescript-eslint/parser',
+		sourceType: 'module',
 	},
 	env: {
 		browser: true,
@@ -20,6 +20,6 @@ module.exports = {
 		node: true,
 	},
 	rules: {
-		"prettier/prettier": "error",
+		'prettier/prettier': 'off',
 	},
 };
