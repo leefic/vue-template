@@ -1,4 +1,6 @@
-*.html
 dist
 build
 coverage
+*.html
+*.json
+*.yaml
